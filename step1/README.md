@@ -1,44 +1,38 @@
+# Step 1
+
 ## Script Python para buscar dados do book de ordens de futuros da Binance
 
-a) Baixe ou clone este projeto
-
-```bash=
-git clone https://github.com/21orangehat/keep.git
-```
-
-**OBS**: Caso baixe o projeto no formato zip, descompacte-o.
-
-b) Acesse via terminal o diretório ***step1***
+a) Acesse via terminal o diretório ***step1***
 
 ```bash=
 cd step1
 ```
 
-c) Crie um ambiente virtual com Python
+b) Crie um ambiente virtual com Python
 
 ```bash=
 python -m venv .venv
 ```
 
-d) Ative o ambiente virtual criado
+c) Ative o ambiente virtual criado
 
 ```bash=
 source .venv/bin/activate
 ```
 
-e) Atualize o pip e o setuptools
+d) Atualize o pip e o setuptools
 
 ```bash=
 pip install --upgrade pip setuptools
 ```
 
-f) Instale as bibliotecas no ambiente virtual ativo
+e) Instale as bibliotecas no ambiente virtual ativo
 
 ```bash=
 pip install -r requirements.txt
 ```
 
-g) Execute o script
+f) Execute o script
 
 ```bash=
 python orderbook.py 
