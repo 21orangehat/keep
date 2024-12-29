@@ -2,6 +2,9 @@
 
 ## Script Python para buscar dados do book de ordens de futuros da Binance
 
+### [Documentação do método Order Book](https://developers.binance.com/docs/derivatives/usds-margined-futures/market-data/rest-api/Order-Book
+)
+
 a) Acesse via terminal o diretório ***step1***
 
 ```bash=
