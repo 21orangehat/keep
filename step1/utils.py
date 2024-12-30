@@ -27,22 +27,24 @@ def analyze_data(data) -> None:
     nb = list(_bids)
     na = list(_asks)
 
-    # Bids
+    # Bids (Ordens de compra)
     print("======== Bids ========")
     for i, pb in enumerate(nb):
-        vpb, spb = .0, .0
+        volb, vpb, spb = .0, .0, .0
         for _pb in pb:
             vpb += float(_pb[0])
             spb += float(_pb[1])
         vpb = vpb / len(_pb)
-        print(f"[{i}] - No strike {vpb:.2f} temos {spb:.2f} ordens de compra.")
+        volb = vpb * spb
+        print(f"[{i}] - No strike ${vpb:.2f} temos {spb:.2f} tokens para compra com volume de ${volb:.2f}")
     
-    #  Asks
+    #  Asks (Ordens de venda)
     print("======== Asks ========")
     for i, pa in enumerate(na):
-        vpa, spa = .0, .0
+        vola, vpa, spa = .0, .0, .0
         for _pa in pa:
             vpa += float(_pa[0])
             spa += float(_pa[1])
         vpa = vpa / len(_pa)
-        print(f"[{i}] - No strike {vpa:.2f} temos {spa:.2f} ordens de venda.") 
+        vola = vpa * spa
+        print(f"[{i}] - No strike ${vpa:.2f} temos {spa:.2f} tokens para venda com volume de ${vola:.2f}") 
